@@ -1,0 +1,37 @@
+{
+  "addonType": "system app",
+  "annotations": {
+    "docsURL": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/dra-intro-install.html",
+    "source": "nvidia",
+    "architecture": "amd64,arm64",
+    "airgap": "true"
+  },
+  "cloudTypes": [
+    "all"
+  ],
+  "charts": [
+    "charts/nvidia-dra-driver-gpu-25.8.1.tgz"
+  ],
+  "displayName": "NVIDIA DRA Driver for GPUs",
+  "layer": "addon",
+  "name": "nvidia-dra-driver",
+  "version": "25.8.1",
+  "constraints": {
+    "dependencies": [
+      {
+        "packName": "kubernetes",
+        "layer": "k8s",
+        "minVersion": "1.32",
+        "maxVersion": "",
+        "type": "optional"
+      },
+      {
+        "packName": "nvidia-gpu-operator",
+        "layer": "addon",
+        "minVersion": "25.3.0",
+        "maxVersion": "",
+        "type": "optional"
+      }
+    ]
+  }
+}
