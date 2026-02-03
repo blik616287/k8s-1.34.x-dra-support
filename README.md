@@ -8,7 +8,7 @@ DRA is a Kubernetes feature that provides flexible request and sharing of hardwa
 
 ## Prerequisites
 
-- Kubernetes 1.32+ (DRA is GA in 1.34+)
+- Kubernetes 1.32+ (experimental), 1.34+ (GA)
 - NVIDIA GPU Operator 25.3.0+
 - CDI-enabled container runtime (containerd 1.7+ or CRI-O 1.28+)
 - Node Feature Discovery (NFD) for GPU detection
